@@ -1,0 +1,210 @@
+@import url('/style.css');
+#sectionTrivial {
+  height: 90%;
+  width: 100%;
+  background-color: var(--gh-forth-bg);
+  padding: var(--gh-padding-m) var(--gh-padding-xl);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sectionTrivial > article:nth-of-type(1) {
+  width: 850px;
+  height: 550px;
+  background-color: var(--gh-third-bg);
+  border-radius: var(--gh-br);
+  gap: 20px;
+}
+
+#sectionTrivial > article:nth-of-type(1) > div {
+  width: 180px;
+  background-color: var(--gh-second-bg);
+  border-radius: var(--gh-br);
+  height: 230px;
+  padding: var(--gh-padding-s);
+}
+#sectionTrivial > article:nth-of-type(1) > div > p {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-align: center;
+  min-height: 40px;
+  line-height: 1.3;
+}
+
+.ulRespuestas {
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.ulRespuestas > div {
+  background-color: var(--gh-first-bg);
+  border-radius: var(--gh-br);
+  height: 28px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.ulRespuestas > div:hover {
+  scale: 1.1;
+}
+
+.ulRespuestas > div > li {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.ulRespuestas > div.seleccionada {
+  background-color: var(--gh-third-bg);
+}
+
+#sectionTrivial > article:nth-of-type(2) {
+  width: 100%;
+  height: 70px;
+  gap: 20px;
+}
+
+.divPuntT {
+  background-color: var(--gh-first-bg);
+  width: 60px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+
+.divPuntT > h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.divWinT {
+  background-color: var(--gh-color5);
+  width: 250px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+
+.divWinT > h3 {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.botonResetT > img {
+  width: 50%;
+  margin-top: 5px;
+}
+
+@media (max-width: 896px) {
+  #sectionTrivial {
+    gap: 50px;
+    justify-content: center;
+  }
+  #sectionTrivial > article:nth-of-type(1) {
+    width: 730px;
+    height: 480px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div {
+    width: 150px;
+    height: 200px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div > p {
+    min-height: 40px;
+  }
+  .ulRespuestas > div {
+    height: 20px;
+    width: 130px;
+  }
+  .ulRespuestas > div > li {
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 780px) {
+  #sectionTrivial > article:nth-of-type(1) {
+    width: 600px;
+    height: 480px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div {
+    width: 120px;
+    height: 200px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div > p {
+    font-size: 8px;
+    min-height: 50px;
+  }
+  .ulRespuestas {
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .ulRespuestas > div {
+    height: 20px;
+    width: 90px;
+  }
+  .ulRespuestas > div > li {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 635px) {
+  #sectionTrivial {
+    height: 1100px;
+  }
+  #sectionTrivial > article:nth-of-type(1) {
+    width: 350px;
+    height: 900px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div {
+    width: 130px;
+    height: 200px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div > p {
+    font-size: 8px;
+  }
+  .ulRespuestas {
+    gap: 8px;
+  }
+  .ulRespuestas > div {
+    height: 20px;
+    width: 90px;
+  }
+  .ulRespuestas > div > li {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 581px) {
+  .divPuntT {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 489px) {
+  #sectionTrivial {
+    gap: 20px;
+  }
+  .divPuntT {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #sectionTrivial {
+    height: 2000px;
+    gap: 20px;
+  }
+  #sectionTrivial > article:nth-of-type(1) {
+    width: 200px;
+    height: 1800px;
+  }
+  #sectionTrivial > article:nth-of-type(1) > div {
+    width: 130px;
+    height: 200px;
+  }
+  .divPuntT {
+    width: 40px;
+    height: 40px;
+  }
+}

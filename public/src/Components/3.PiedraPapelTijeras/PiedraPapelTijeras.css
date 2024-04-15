@@ -1,0 +1,193 @@
+@import url('/style.css');
+#sectionPpt {
+  height: 90%;
+  width: 100%;
+  background-color: var(--gh-third-bg);
+  padding: var(--gh-padding-m) var(--gh-padding-xl);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sectionPpt > article:nth-of-type(1) {
+  width: 590px;
+  height: 550px;
+  flex-direction: column;
+  background-color: var(--gh-second-bg);
+  border-radius: var(--gh-br);
+  padding: var(--gh-padding-m);
+  gap: 25px;
+}
+
+#sectionPpt > article:nth-of-type(1) > div:nth-of-type(1) {
+  width: 200px;
+  height: 200px;
+  background-color: var(--gh-forth-bg);
+  border-radius: var(--gh-br);
+}
+#sectionPpt > article:nth-of-type(1) > div:nth-of-type(1) > img {
+  width: 100%;
+}
+
+.divUsuario {
+  width: 100%;
+  height: 200px;
+  gap: 25px;
+}
+.divUsuario > div {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--gh-br);
+  background-color: var(--gh-forth-bg);
+  cursor: pointer;
+}
+.divUsuario > div:hover {
+  scale: 1.1;
+}
+.divUsuario > div > img {
+  width: 100%;
+}
+
+#sectionPpt > article:nth-of-type(2) {
+  width: 100%;
+  height: 70px;
+  gap: 20px;
+}
+
+.divPuntUsuario {
+  background-color: var(--gh-first-bg);
+  width: 80px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+.divPuntMaquina {
+  background-color: var(--gh-first-bg);
+  width: 80px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+
+.divPuntUsuario > h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.divPuntMaquina > h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.botonReset > img {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.botonComprobar > img {
+  width: 60%;
+  margin-top: 5px;
+}
+@media (max-width: 1439px) {
+  #sectionPpt {
+    justify-content: center;
+    gap: 50px;
+  }
+  #sectionPpt > article:nth-of-type(1) {
+    width: 510px;
+    height: 470px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #sectionPpt > article:nth-of-type(1) > div:nth-of-type(1) {
+    width: 170px;
+    height: 170px;
+  }
+  .divUsuario > div {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 581px) {
+  #sectionPpt {
+    height: 88%;
+  }
+
+  #sectionPpt > article:nth-of-type(1) {
+    width: 460px;
+    height: 420px;
+    padding: 0;
+    gap: 0px;
+    justify-content: end;
+  }
+
+  #sectionPpt > article:nth-of-type(1) > div:nth-of-type(1) {
+    width: 180px;
+    height: 180px;
+  }
+  .divUsuario > div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .divPuntMaquina {
+    width: 80px;
+    height: 50px;
+  }
+  .divPuntUsuario {
+    width: 80px;
+    height: 50px;
+  }
+
+  .divPuntUsuario > h3 {
+    font-size: 15px;
+  }
+  .divPuntMaquina > h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 489px) {
+  #sectionPpt > article:nth-of-type(1) {
+    width: 350px;
+    height: 310px;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+  }
+  #sectionPpt > article:nth-of-type(1) > div:nth-of-type(1) {
+    width: 120px;
+    height: 120px;
+  }
+  .divUsuario {
+    height: 100px;
+  }
+  .divUsuario > div {
+    width: 80px;
+    height: 80px;
+  }
+  .divPuntMaquina {
+    height: 40px;
+  }
+  .divPuntUsuario {
+    height: 40px;
+  }
+  .divPuntUsuario > h3 {
+    font-size: 12px;
+  }
+  .divPuntMaquina > h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  #sectionPpt {
+    justify-content: center;
+    gap: 20px;
+  }
+  #sectionPpt > article:nth-of-type(1) {
+    width: 330px;
+    height: 290px;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+  }
+}

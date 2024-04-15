@@ -1,0 +1,71 @@
+@import url('/style.css');
+
+.button {
+  width: 250px;
+  height: 50px;
+  background-color: var(--gh-color1);
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border: none;
+}
+.button:hover {
+  scale: 1.1;
+  border: 3px solid var(--gh-color5);
+}
+
+.button.home {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: var(--gh-color5);
+  cursor: pointer;
+}
+
+.button.reset {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--gh-br);
+  cursor: pointer;
+}
+
+@media (max-width: 832px) {
+  .button {
+    width: 190px;
+    height: 40px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 643px) {
+  .button {
+    font-size: 10px;
+  }
+
+  .button:hover {
+    border: 2px solid var(--gh-color5);
+  }
+}
+
+@media (max-width: 581px) {
+  .button.reset {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 489px) {
+  .button.reset {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .button.home {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

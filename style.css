@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100svh;
+}
+
+:root {
+  /*FONT-FAMILY*/
+  font-family: 'Jost', sans-serif;
+  font-optical-sizing: auto;
+
+  /*BRANDING-COLORS*/
+  --gh-color1: #f4efef;
+  --gh-color2: #a1be95;
+  --gh-color3: #e2dfa2;
+  --gh-color4: #92aac7;
+  --gh-color5: #f75252;
+  --gh-color6: rgb(21, 20, 20);
+
+  /*BACKGROUND COLORS*/
+  --gh-first-bg: var(--gh-color1);
+  --gh-second-bg: var(--gh-color2);
+  --gh-third-bg: var(--gh-color3);
+  --gh-forth-bg: var(--gh-color4);
+
+  /*TEXT COLORS*/
+  --gh-primary-text: var(--gh-color6);
+  --gh-secondary-text: var(--gh-color1);
+
+  /*BORDER RADIUS*/
+  --gh-br: 20px;
+
+  /*SPACING*/
+  --gh-margin-xs: 10px;
+  --gh-margin-s: 20px;
+  --gh-margin-m: 30px;
+  --gh-margin-l: 40px;
+  --gh-margin-xl: 50px;
+  --gh-margin-section: 100px;
+
+  --gh-padding-xs: 10px;
+  --gh-padding-s: 20px;
+  --gh-padding-m: 30px;
+  --gh-padding-l: 40px;
+  --gh-padding-xl: 50px;
+  --gh-padding-section: 100px;
+}
+
+/*FLEX CONTAINER*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#app {
+  height: 100svh;
+}

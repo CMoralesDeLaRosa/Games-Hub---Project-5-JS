@@ -1,0 +1,191 @@
+@import url('/style.css');
+
+/* Agregar regla CSS para la animación de giro */
+@keyframes girarCarta {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+#sectionParejas {
+  height: 90%;
+  width: 100%;
+  background-color: var(--gh-second-bg);
+  padding: var(--gh-padding-m) var(--gh-padding-xl);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#sectionParejas > article:nth-of-type(1) {
+  width: 590px;
+  height: 550px;
+  background-color: var(--gh-forth-bg);
+  border-radius: var(--gh-br);
+  gap: 25px;
+  padding: var(--gh-padding-s);
+}
+#sectionParejas > article:nth-of-type(2) {
+  width: 100%;
+  height: 70px;
+  gap: 20px;
+}
+#sectionParejas > article:nth-of-type(2) > button > img {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.divPunt {
+  background-color: var(--gh-first-bg);
+  width: 60px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+
+.divPunt > h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.divWin {
+  background-color: var(--gh-color5);
+  width: 250px;
+  height: 60px;
+  border-radius: var(--gh-br);
+}
+.divWin > h3 {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.divCarta {
+  width: 80px;
+  height: 100px;
+  background-color: var(--gh-third-bg);
+  border-radius: var(--gh-br);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.divCarta:hover {
+  scale: 1.1;
+}
+.girar {
+  animation: girarCarta 0.15s;
+}
+
+@media (max-width: 1439px) {
+  #sectionParejas {
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+  }
+  #sectionParejas > article:nth-of-type(1) {
+    width: 510px;
+    height: 470px;
+    gap: 15px;
+  }
+
+  .divCarta {
+    width: 70px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #sectionParejas > article:nth-of-type(1) {
+    width: 480px;
+    height: 440px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 644px) {
+  #sectionParejas > article:nth-of-type(1) {
+    width: 460px;
+    height: 420px;
+  }
+
+  .divCarta {
+    width: 60px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 581px) {
+  #sectionParejas {
+    height: 85%;
+    padding: var(--gh-padding-m) var(--gh-padding-xl);
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #sectionParejas > article:nth-of-type(1) {
+    width: 460px;
+    height: 420px;
+  }
+
+  .divCarta {
+    width: 60px;
+    height: 80px;
+  }
+  .divWin {
+    width: 200px;
+    height: 50px;
+  }
+  .divWin > h3 {
+    font-size: 12px;
+  }
+  .divPunt {
+    width: 50px;
+    height: 50px;
+  }
+  .divPunt > h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 489px) {
+  #sectionParejas {
+    height: 88%;
+    gap: 20px;
+  }
+
+  #sectionParejas > article:nth-of-type(1) {
+    width: 350px;
+    height: 310px;
+  }
+
+  .divCarta {
+    width: 45px;
+    height: 60px;
+  }
+  .divWin {
+    width: 150px;
+    height: 40px;
+  }
+  .divWin > h3 {
+    font-size: 12px;
+  }
+  .divPunt {
+    width: 40px;
+    height: 40px;
+  }
+  .divPunt > h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  #sectionParejas > article:nth-of-type(1) {
+    width: 330px;
+    height: 290px;
+  }
+  .divCarta {
+    width: 40px;
+    height: 55px;
+    border-radius: 15px;
+  }
+}
